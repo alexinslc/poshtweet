@@ -6,7 +6,7 @@ It DOES require you setup your own application at http://dev.twitter.com to get 
 * Consumer Secret
 * OAuth Token
 * OAuth Token Secret
-You will need to insert them on lines (21 - 24)
+You will need to insert them on the lines below.
 
 Usage: tweet -Message "Hello Twitter! from #poshtweet!"
 
@@ -15,7 +15,6 @@ Usage: tweet -Message "Hello Twitter! from #poshtweet!"
 function tweet() {
     param (
     [Parameter(Mandatory=$true)][string]$Message
-
     )
     [Reflection.Assembly]::LoadWithPartialName("System.Security")
     [Reflection.Assembly]::LoadWithPartialName("System.Net")  
